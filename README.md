@@ -1,7 +1,7 @@
 # Task Hawk – ToDo App
 
 A basic full-stack ToDo app built using React (Vite) for frontend and Node.js with Express for backend.  
-This was my first mern stack project built entirely by myself.
+This was my first mern stack project.
 
 ## 🛠️ Tech Stack
 
