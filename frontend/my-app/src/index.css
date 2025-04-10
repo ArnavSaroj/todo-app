@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+body {
+    background-color: rgb(34, 33, 63);
+}
+
+.custom-box {
+    width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background: #1e1e3f;
+    border-radius: 15px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .custom-box {
+        width: 90%; 
+        padding: 1.5rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-box {
+        width: 95%; 
+        padding: 1rem; 
+    }
+}
+
+.custom-box::after,
+.custom-box::before {
+    content: '';
+    position: absolute;
+    width: 103%;
+    height: 105%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(rgb(239, 21, 21), rgb(0, 204, 255), rgb(64, 230, 64), rgb(148, 243, 54), red);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.custom-box::before {
+    filter: blur(5rem);
+}
+
+.animation_lottie {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 220px;
+    height: 220px;
+}
+
+@media (max-width: 950px) {
+    .animation_lottie {
+       display: none;
+}
+}
+@media (max-width: 480px) {
+    .animation_lottie {
+        display: none; 
+    }
+}
